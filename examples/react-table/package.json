@@ -1,19 +1,19 @@
 {
   "name": "@lexical/react-table-example",
   "private": true,
-  "version": "0.51.0",
+  "version": "0.52.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node init && vite",
     "monorepo:dev": "vite -c vite.config.monorepo.ts",
-    "build": "tsc && vite build",
+    "build": "node init && tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@lexical/react": "0.51.0",
-    "@lexical/table": "0.51.0",
-    "@lexical/utils": "0.51.0",
-    "lexical": "0.51.0",
+    "@lexical/react": "0.52.0",
+    "@lexical/table": "0.52.0",
+    "@lexical/utils": "0.52.0",
+    "lexical": "0.52.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5"
   },

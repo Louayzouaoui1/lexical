@@ -1,21 +1,22 @@
 {
   "name": "@lexical/vanilla-js-plugin-example",
   "private": true,
-  "version": "0.51.0",
+  "version": "0.52.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node init && vite",
     "monorepo:dev": "vite -c vite.config.monorepo.ts",
-    "build": "tsc && vite build",
+    "build": "node init && tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@lexical/dragon": "0.51.0",
-    "@lexical/history": "0.51.0",
-    "@lexical/rich-text": "0.51.0",
-    "@lexical/utils": "0.51.0",
+    "@lexical/clipboard": "0.52.0",
+    "@lexical/extension": "0.52.0",
+    "@lexical/history": "0.52.0",
+    "@lexical/html": "0.52.0",
+    "@lexical/rich-text": "0.52.0",
     "emoji-datasource-facebook": "15.1.2",
-    "lexical": "0.51.0"
+    "lexical": "0.52.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
