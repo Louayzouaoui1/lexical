@@ -5,7 +5,7 @@
   "version": "0.52.0",
   "description": "Integration fixture: bundle @lexical/headless and lexical with Metro (the React Native bundler) and execute the bundles. Covers Metro's package-exports resolution of the published ESM builds, both with Metro's defaults and with the documented resolveRequest that adds the development/production condition.",
   "scripts": {
-    "build": "node ./bundle.js",
+    "build": "node init && node ./bundle.js",
     "test": "node ./verify-bundles.js"
   },
   "dependencies": {
