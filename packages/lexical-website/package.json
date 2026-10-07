@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "docusaurus": "cross-env IGNORE_PEER_DEPENDENCIES=react docusaurus",
-    "start": "pnpm -C ../.. run build && pnpm -C ../.. run build:doc-examples && cross-env IGNORE_PEER_DEPENDENCIES=react TYPEDOC_WATCH=true docusaurus start",
-    "build": "pnpm run tsc && pnpm -C ../.. run build && pnpm -C ../.. run build:dev-examples && pnpm -C ../.. run build:doc-examples && cross-env IGNORE_PEER_DEPENDENCIES=react docusaurus build",
+    "start": "node init && pnpm -C ../.. run build && pnpm -C ../.. run build:doc-examples && cross-env IGNORE_PEER_DEPENDENCIES=react TYPEDOC_WATCH=true docusaurus start",
+    "build": "node init && pnpm run tsc && pnpm -C ../.. run build && pnpm -C ../.. run build:dev-examples && pnpm -C ../.. run build:doc-examples && cross-env IGNORE_PEER_DEPENDENCIES=react docusaurus build",
     "tsc": "tsc -p tsconfig.json",
     "test-examples": "node --test scripts/example-source.test.mjs && node scripts/check-homepage-examples.mjs && node scripts/check-getting-started-examples.mjs",
     "swizzle": "cross-env IGNORE_PEER_DEPENDENCIES=react docusaurus swizzle",
